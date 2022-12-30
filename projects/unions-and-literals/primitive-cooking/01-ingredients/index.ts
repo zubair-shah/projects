@@ -1,13 +1,13 @@
 // Please correct any type annotation problems here! ✨
-let arugula: number;
+let arugula: number | undefined;
 let dressing: string;
-let lettuce: number;
-let mealDate: string;
+let lettuce: number | undefined;
+type mealDate = string;
 
 arugula = 2;
 dressing = "honey dijon";
 lettuce = undefined;
-mealDate = new Date("September 13, 2021");
+let mealDate = new Date("September 13, 2021");
 
 console.log(`We're starting on ${mealDate} with a dressing of ${dressing}.`);
 
